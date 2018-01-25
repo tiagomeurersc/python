@@ -1,0 +1,36 @@
+Last login: Wed Jan 17 23:05:33 on ttys000
+MacBook-Pro-de-Tiago:~ tiagomeurer$ cd Documents/code/python
+MacBook-Pro-de-Tiago:python tiagomeurer$ ls
+MacBook-Pro-de-Tiago:python tiagomeurer$ virtualenv venv -p /usr/bin/python3
+The path /usr/bin/python3 (from --python=/usr/bin/python3) does not exist
+MacBook-Pro-de-Tiago:python tiagomeurer$ which python3
+/usr/local/bin/python3
+MacBook-Pro-de-Tiago:python tiagomeurer$ virtualenv venv -p /usr/local/bin/python3
+Running virtualenv with interpreter /usr/local/bin/python3
+Using base prefix '/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6'
+New python executable in /Volumes/Machintosh_HD/tiagomeurer/Documents/code/python/venv/bin/python3.6
+Also creating executable in /Volumes/Machintosh_HD/tiagomeurer/Documents/code/python/venv/bin/python
+Installing setuptools, pip, wheel...done.
+MacBook-Pro-de-Tiago:python tiagomeurer$ ls
+venv
+MacBook-Pro-de-Tiago:python tiagomeurer$ cd venv
+MacBook-Pro-de-Tiago:venv tiagomeurer$ ls
+bin			lib
+include			pip-selfcheck.json
+MacBook-Pro-de-Tiago:venv tiagomeurer$ cd bin
+MacBook-Pro-de-Tiago:bin tiagomeurer$ ls
+activate		easy_install-3.6	python-config
+activate.csh		pip			python3
+activate.fish		pip3			python3.6
+activate_this.py	pip3.6			wheel
+easy_install		python
+MacBook-Pro-de-Tiago:bin tiagomeurer$ .activate
+-bash: .activate: command not found
+MacBook-Pro-de-Tiago:bin tiagomeurer$ . activate
+(venv) MacBook-Pro-de-Tiago:bin tiagomeurer$ ls
+activate		easy_install-3.6	python-config
+activate.csh		pip			python3
+activate.fish		pip3			python3.6
+activate_this.py	pip3.6			wheel
+easy_install		python
+(venv) MacBook-Pro-de-Tiago:bin tiagomeurer$ 
