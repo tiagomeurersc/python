@@ -24,6 +24,8 @@ activate.csh		pip			python3
 activate.fish		pip3			python3.6
 activate_this.py	pip3.6			wheel
 easy_install		python
+
+//ativando o ambiente virtual:
 MacBook-Pro-de-Tiago:bin tiagomeurer$ .activate
 -bash: .activate: command not found
 MacBook-Pro-de-Tiago:bin tiagomeurer$ . activate
@@ -33,4 +35,10 @@ activate.csh		pip			python3
 activate.fish		pip3			python3.6
 activate_this.py	pip3.6			wheel
 easy_install		python
-(venv) MacBook-Pro-de-Tiago:bin tiagomeurer$ 
+(venv) MacBook-Pro-de-Tiago:bin tiagomeurer$
+
+//para criar o banco de dados o comando é o seguinte:
+(venv) MacBook-Pro-de-Tiago:simplemooc tiagomeurer$ python manage.py migrate
+
+//criando uma aplicação:
+(venv) MacBook-Pro-de-Tiago:simplemooc tiagomeurer$ python manage.py startapp nomedaaplicacao
